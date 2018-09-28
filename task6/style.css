@@ -1,0 +1,24 @@
+.button{
+  display: inline-block;
+  padding: 12px;
+  background-color: grey;
+  color: black;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px;
+  border: 1px solid black;
+  transition: all 1s;
+}
+.button:hover{
+  cursor: grabbing;
+  background: white;
+  color: blue;
+  border-bottom: blue;
+
+
+}
+
+.button:active{
+  color:  red;
+  border: 1px dotted blue;
+
+}

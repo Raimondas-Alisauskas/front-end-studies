@@ -1,0 +1,21 @@
+.main {
+  width: 600px;
+  margin: 100px auto;
+}
+
+.inline {
+  background-color: yellow;
+  height: 40px;
+}
+
+.inline-block {
+  background-color: green;
+  height: 40px;
+  display: inline-block;
+}
+
+.block {
+  background-color: red;
+  height: 40px;
+  display: block;
+}

@@ -1,0 +1,16 @@
+.Img{
+  width: 80%;
+margin-left: 10%;
+}
+.backGroundImg{
+background-image: url(sky.jpeg);
+width: 80%;
+height: 500px;
+margin: 10%;
+background-size: contain;
+background-repeat: no-repeat;
+background-attachment:fixed;
+}
+main {
+  height: 600px;
+}

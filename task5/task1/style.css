@@ -1,0 +1,31 @@
+
+.img-wrapper {
+cursor:crosshair;
+}
+
+.image-example {
+  border: thick solid yellow;
+  box-shadow: 5px 20px 20px;
+  border-radius: 50%;
+}
+
+.code-academy {
+  display: inline-block;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 30pt;
+  color: purple;
+  background-color: rgba(255, 0, 255, 0.3);
+  /* font-family: serif; */
+
+}
+#menu{
+  text-align: center;
+}
+
+.item {
+color: red;
+}
+
+.description {
+  font-style: italic;
+}

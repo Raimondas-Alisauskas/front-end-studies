@@ -15,10 +15,10 @@
             background: #2e3d49;
             padding: 10px 20px;
         }
-        .title {
+        .title, h1, h2 {
             color: #fff;
         }
-        .underline {
+        .underline, h2 {
             text-decoration: underline;
         }
         .list {
@@ -37,9 +37,9 @@
 <body>
     <h1>Add proper ID and Class attributes to get the result</h1>
     <p>See solution-image.png</p>
-	<div>
+	<div id="to-do-list">
 		<h1>My To-Do List</h1>
-		<h2>Chores</h2>
+		<h2 >Chores</h2>
 		<ul class="list">
 			<li>load the diswasher</li>
 			<li>vacuum living room</li>
@@ -48,8 +48,8 @@
 		</ul>
 		<h2>Homework</h2>
 		<ul class="list">
-			<li>brainstorm ideas for Science project</li>
-			<li>finish Calculus 2 problems</li>
+			<li class="finished">brainstorm ideas for Science project</li>
+			<li class="finished">finish Calculus 2 problems</li>
 			<li>study for Programming midterm :P</li>
             <li>finish Project 0 on Udacity FEND</li>
 			<li class="finished">find sources for Biology research paper</li>
@@ -57,7 +57,7 @@
 		</ul>
         <h2>Party</h2>
         <ul class="list">
-            <li>send out invitations</li>
+            <li class="finished">send out invitations</li>
             <li>reserve party room at restaurant</li>
             <li>order the cake!</li>
         </ul>

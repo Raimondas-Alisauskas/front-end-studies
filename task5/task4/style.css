@@ -1,0 +1,33 @@
+/* add your CSS here */
+.remelis {
+  border: 2px solid grey;
+  width: 402px;
+  margin: auto;
+  padding: 12px;
+  box-shadow: 10px 10px 10px black;
+}
+h3 {
+  margin-left: 4px
+}
+
+.paveikslas {
+  width: 400px;
+  margin: 1px;
+}
+
+.aprasymas {
+  border: 2px solid grey;
+  padding: 12px;
+  margin: 0px;
+}
+
+.list{
+  list-style: none;
+}
+.bold{
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}

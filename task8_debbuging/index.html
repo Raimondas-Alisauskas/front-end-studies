@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+TODO
+ The <header> and <footer> elements are supposed have a background color, but no color appears.
+The <h1> in the header and the <p> in the footer are both too high up on the page — this is especially apparent on the <h1>, which is nearly off the screen! You could try clicking on the <h1> in the developer tools inspector and then unchecking the checkboxes next to the CSS declarations shown in the rules panel to find out which one is causing the problem.
+The <img> is supposed to be floated down and to the right so it sits to the right of some of the text, but it isn't — it's directly above all of the text.
+The text in the <main> content area is far too small — the paragraphs and list items should have a larger font-size applied to it, but it doesn't seem to have been applied to either. Hint: This one is a bit harder, as it is a problem with the selector rather than a property.  You may have to study the source code to find this — you can find it in the Style Editor in Firefox's developer tools. -->
+  <head>
+    <meta charset="utf-8">
+    <title>Debugging CSS</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Debugging page task</h1>
+    </header>
+
+    <main>
+
+      <h2>My article</h2>
+
+      <img src="https://mdn.mozillademos.org/files/11947/ff-logo.png" alt="firefox logo">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+
+      <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li>Integer nec odio. Praesent libero.</li>
+        <li>Sed cursus ante dapibus diam.</li>
+      </ul>
+
+      <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.</p>
+
+    </main>
+
+    <footer>
+      <p>&copy; Coding makes perfect</p>
+    </footer>
+  </body>
+</html>
