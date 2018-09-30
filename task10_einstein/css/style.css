@@ -1,0 +1,62 @@
+body {
+  font-size: 16px;
+  line-height: 150%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+body * {
+  transition: 0.5s;
+}
+
+article {
+  border: 1px solid #e7e7e7;
+  border-top: 1vw solid #0974b3;
+  margin: 15px;
+  background-color: white;
+  padding: 20px;
+  display: inline-block;
+}
+
+h1 {
+  color: #0974b3;
+}
+
+img {
+  width: 150px;
+  float: left;
+  margin-right: 15px;
+}
+
+article:hover {
+  border-top-color: #0C95E5;
+}
+article:hover h1 {
+  color: #0C95E5;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.article-inline {
+  display: inline-flex;
+}
+
+.year {
+  color: #666;
+}
+
+.description p:first-child {
+  font-style: italic;
+}
+
+
+
+/*
+    Pilko teksto spalva
+    #666;
+
+    Bloko virÅ¡utinio border ir h1 spalva:
+    #0974b3
+
+*/
