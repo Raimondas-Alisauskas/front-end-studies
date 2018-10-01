@@ -1,0 +1,53 @@
+body {
+  border: 1px solid black;
+}
+
+header {
+  background-color: slateblue;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+}
+
+button {
+  background-color: white;
+  margin: 12px 0px;
+}
+
+.sonai {
+  background-color: turquoise;
+  flex: 1 100px;
+}
+
+.vidurys {
+  background-color: sandybrown;
+  flex: 2 100px;
+}
+
+.vidurysHeader {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 8px;
+}
+
+.buttonWide {
+  width: 91%;
+}
+
+.offer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.langFormat {
+  padding: 13px;
+  margin: 6px 7px;
+}
