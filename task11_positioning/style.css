@@ -8,7 +8,6 @@
 
 html, * p {
   border: none;
-  padding: 5px;
 }
 
 body {
@@ -35,20 +34,17 @@ article {
 aside {
   display: inline-block;
   float: right;
-  width: 32%;
+  width: 33%;
   height: 96%;
   border-color: #FF9800;
 }
 
 footer {
-  /* position: relative; */
   bottom: -10px;
-  /* width: 100%; */
   border-color: yellow;
 }
 
 main {
-  /* display: flex; */
   height: 350px;
   border: none;
 }
@@ -61,20 +57,21 @@ main {
     border: none;
     margin: 0;
     position: absolute;
-    bottom: 46px;
+    bottom: 36px;
     width: 100%;
 }
 
-.articleSection {border-color: #c101c1;}
+.articleSection {
+  border-color: #c101c1;
+}
 
 .articleFooter {
   position: absolute;
   bottom: 0px;
   width: 95%;
-  /* margin: inherit; */
 }
 
 .assideContent {
     border-color: #00BCD4;
-    height: 41%;
+    height: 43%;
 }

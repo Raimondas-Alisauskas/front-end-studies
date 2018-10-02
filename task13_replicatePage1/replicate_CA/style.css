@@ -1,0 +1,63 @@
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  background: #FFF;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav ul li {
+  padding: 6px 12px;
+  cursor: pointer;
+  border-bottom: 2px solid white;
+}
+
+.nav ul li:hover {
+  padding: 6px 12px;
+  border-bottom: 2px solid blue;
+}
+
+.nav ul li.registration:hover {
+  border-bottom: 2px solid white;
+}
+
+.logo img {
+  width: 110px;
+}
+
+.phone span {
+  color: #999;
+}
+
+.registration {
+  background-color: blue;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5%;
+}
+.main{
+  display: flex;
+}
+.main-content{
+  display: flex;
+}
+.content-info{
+  padding: 0px 12px;
+}
+.date{
+  color: blue;
+  margin-top: 0;
+}
+.btn{
+  display: inline-block;
+  padding: 12px;
+  background-color: blue;
+}
