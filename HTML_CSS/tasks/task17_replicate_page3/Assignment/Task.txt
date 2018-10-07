@@ -1,0 +1,16 @@
+Acceptance criteria:
+
+Build main section:
+first with background
+second with provided photos
+
+Build navbar (goes together with main section)
+
+add responsive queries
+-1200px navbar should disappear and menu button (burger) will be visible
+
+776px goes to small screen mobile (see pictures attached)
+!!! Bonus
+
+Build additional section - "Meet me - growing developer"
+Build footer

@@ -1,0 +1,23 @@
+#framework .frameworkHead {
+  display: flex;
+  align-items: center;
+}
+#framework .frameworkHead img {
+  float: left;
+  height: 100px;
+  object-fit: contain;
+}
+#framework .frameworkHead p {
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+th {
+  background-color: blue;
+}
+
+.modal-body {
+  flex: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

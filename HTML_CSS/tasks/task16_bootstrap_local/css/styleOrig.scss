@@ -1,0 +1,25 @@
+#framework {
+  .frameworkHead {
+    display: flex;
+    align-items: center;
+
+    img {
+      float: left;
+      // width: 200px;
+      height: 100px;
+      object-fit: contain;
+    }
+    p {
+      font-size: 20px;
+      padding: 0px 10px;
+    }
+  }
+}
+
+th {
+  background-color: blue;
+}
+
+.modal-body {
+  flex: auto;
+}

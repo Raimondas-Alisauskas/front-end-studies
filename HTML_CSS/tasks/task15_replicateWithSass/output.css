@@ -1,0 +1,65 @@
+/* * {
+  border: 1px dashed grey;
+} */
+body {
+  background: linear-gradient(-90deg, #9c5ec5, #5428f5);
+}
+
+.name {
+  font-size: larger;
+  font-weight: bold;
+  color: yellow;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.price {
+  font-size: xx-large;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+.box {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.box ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+.box ul li {
+  padding: 12px 0;
+  border-bottom-width: thin;
+  border-bottom: solid;
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+.box ul li:first-child {
+  border-bottom: none;
+}
+.box ul li,
+.box ul p {
+  width: 124px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 90px;
+  border-radius: 6px;
+  background-color: red;
+  padding: 6px;
+}
+.btn p {
+  margin: 0;
+  width: auto;
+}
+
+/*# sourceMappingURL=output.css.map */

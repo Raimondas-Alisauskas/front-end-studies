@@ -1,0 +1,111 @@
+@import "shared-styles.scss"; // div {
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #947bb0;
+
+  nav {
+    // border: 1px solid grey;
+    width: 50%;
+    height: $navHeight;
+    position: absolute;
+    left: 25%;
+    top: $navOfset;
+
+    ul {
+      margin: 0;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 5px;
+
+      li {
+        // display: inline-block;
+        list-style: none;
+      }
+    }
+  }
+
+  .row > div {
+    border: 1px solid grey;
+    height: $frameHeight;
+  }
+
+  .row {
+    .main {
+      .icon {
+        display: none;
+      }
+
+      .butFrame {
+        display: flex;
+        position: fixed;
+        right: 2%;
+        top: 5%;
+
+        .buttn {
+          background-color: transparent;
+          border: 1px solid black;
+          // align-items: center;
+          // justify-content: center;
+          text-align: center;
+          height: $navHeight;
+          width: $buttnWidth;
+          padding: 0 6px;
+        }
+      }
+    }
+  }
+
+  footer {
+    border: 1px solid grey;
+    height: $frameHeight;
+  }
+}
+@media screen and (max-width: 767px) {
+
+  nav {
+    ul {
+      // display: none;
+      li {
+        display: none;
+      }
+    }
+  }
+
+  .row {
+    .main {
+      .icon {
+        display: flex;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+      }
+
+      .butFrame {
+        display: flex;
+        position: relative;
+        top: $buttnPostion;
+        width: 100%;
+        right: 0;
+
+        .buttn {
+          background-color: transparent;
+          border: 1px solid black;
+          // align-items: center;
+          // justify-content: center;
+          text-align: center;
+          height: $navHeight;
+          width: $buttnWidth;
+          padding: 0 6px;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+
+// body{
+//   background-color: yellow;
+// }

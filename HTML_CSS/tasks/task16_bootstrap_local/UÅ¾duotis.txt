@@ -1,0 +1,5 @@
+﻿- Išsirinkite 3 atsitiktinius frameworkus iš šio puslapio (https://www.keycdn.com/blog/front-end-frameworks/) ir užpildykite informaciją.
+- Nukopijuokite 3-jų frameworkų aprašymus, pros ir cons sąrašus.
+- Google susiraskite reikalingus logotipus.
+- Panaudokite šiuos Bootstrap komponentus: lentelę, mygtuką, ikoną ir modalinį langą.
+- Paspaudus mygtuką "Read more" turėtų atsidaryti modalinis langas papildoma informacija.

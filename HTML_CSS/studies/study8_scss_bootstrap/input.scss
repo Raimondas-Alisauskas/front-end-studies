@@ -1,0 +1,11 @@
+@import "shared-styles.scss";
+
+body {
+  background: $backgroundCol;
+}
+.box{
+  background-color: $boxCol;
+}
+p{
+  color: $textCol;
+}
