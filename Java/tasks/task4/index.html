@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<!-- Parašykite scriptą, kuris paprašytų įvesti: prekės kainą, paklaustų ar reikalingas pristatymas, jei reikalingas - paklaustų miesto į kurį reiks pristatyti;
+"Įveskite prekės kainą";
+"Ar reikalingas pristatymas į namus? (taip/ne)";
+"Į kurį miestą reiks pristatyti?"
+
+Jei prekės kaina daugiau arba lygu 50€ arba miestas yra "Vilnius"- pristatymas nemokamas. Pristatymas kitur Lietuvoje: 20€;
+
+Galiausiai atspausdintų tokią informaciją:
+
+1 variantas (be pristatymo)
+
+Prekės kaina: xx.xx €
+Prekę galite atsiimti nemokamai Vilniuje adresu Gedimino pr. 1a
+
+2 variantas (su pristatymu)
+
+Prekės kaina : xx.xx €
+Pristatymas: xx.xx €
+Iš viso: xx.xx €
+Prekę pristatysime į "įvestas miestas" per 1-3 dienas.
+
+3 variantas (su nemokamu pristatymu)
+
+Prekės kaina : xx.xx €
+Prekę nemokamai pristatysime į "įvestas miestas" per 1-3 dienas. -->
+
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+
+</body>
+<script type="text/javascript">
+  // let prekKaina = prompt("Įveskite prekės kainą");
+  //
+  // let i = true;
+  // let reikalingas;
+  // while (i) {
+  //   let reikalingasPristatymas = prompt("Ar reikalingas pristatymas į namus? (taip/ne)");
+  //   if (reikalingasPristatymas == "taip") {
+  //     reikalingasPristBool = true;
+  //     i = false;
+  //     let pristMiestas = prompt("Į kurį miestą reiks pristatyti?");
+  //
+  //   } else if (reikalingasPristatymas == "ne") {
+  //     reikalingasPristBool = false;
+  //     i = false;
+  //   } else {
+  //     alert("Bloga įvestis.")
+  //   }
+  // }
+
+
+
+  // let pristKaina;
+  // if (prekKaina > 50 || pristMiestas == "Vilnius") {
+  //   pristKaina = 0;
+  // }
+  // pristKaina = 20;
+  // console.log(`pristKaina ${pristKaina}`);--------------------
+
+  let prekKaina = '40';
+  let reikalingasPristBool = true;
+  let pristMiestas = 'Vilnius';
+
+  if (reikalingasPristBool) {
+    if (prekKaina > 50 || pristMiestas == "Vilnius") {
+      console.log(`Prekės kaina: ${prekKaina} € \n
+        Prekę nemokamai pristatysime į ${pristMiestas} per 1-3 dienas.`);
+    } else {
+      console.log(`PrKaina: ${prekKaina}`);
+      console.log(pristMiestas);
+      console.log(`pristKaina:${pristKaina}`);
+    }
+
+  } else {
+    console.log(`Prekės kaina: ${prekKaina} € \n
+    Prekę galite atsiimti nemokamai Vilniuje adresu Gedimino pr. 1a`);
+  }
+</script>
+
+</html>

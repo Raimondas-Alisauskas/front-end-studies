@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="inner-wrapper">
+            <div class="screen">
+                <output class="output" id ="output"></output>
+            </div>
+            <div id="btns-wrapper">
+                <div class="row">
+                    <button class="c"  onclick="init()">C</button>
+                    <button class="divide"  onclick="changeOperator('divide')">/</button>
+                </div>
+                <div class="row">
+                    <button class="seven" onclick="makeNumber('7')">7</button>
+                    <button class="eight" onclick="makeNumber('8')">8</button>
+                    <button class="nine" onclick="makeNumber('9')">9</button>
+                    <button class="prod"  onclick="changeOperator('prod')">x</button>
+                </div>
+                <div class="row">
+                    <button class="four" onclick="makeNumber('4')">4</button>
+                    <button class="five" onclick="makeNumber('5')">5</button>
+                    <button class="six" onclick="makeNumber('6')">6</button>
+                    <button class="diff" onclick="changeOperator('diff')">-</button>
+                </div>
+                <div class="row">
+                    <button class="one" onclick="makeNumber('1')">1</button>
+                    <button class="two" onclick="makeNumber('2')">2</button>
+                    <button class="three" onclick="makeNumber('3')">3</button>
+                    <button class="plus" onclick="changeOperator('plus')">+</button>
+                </div>
+                <div class="row">
+                    <button class="neg" data-neg="negative-positive">±</button>
+                    <button  onclick="makeNumber('0')">0</button>
+                    <button data-dot="dot">.</button>
+                    <button class="eq" onclick="getResult()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="calculator-app.js"></script>
+</body>
+
+</html>

@@ -1,111 +1,198 @@
 @import "shared-styles.scss"; // div {
 
-
 body {
   font-family: 'Lato', sans-serif;
+  color: white;
   background-color: #947bb0;
 
   nav {
-    // border: 1px solid grey;
-    width: 50%;
-    height: $navHeight;
     position: absolute;
-    left: 25%;
+    right: 0;
+    left: 0;
     top: $navOfset;
 
-    ul {
-      margin: 0;
-      display: flex;
-      justify-content: space-evenly;
-      padding: 5px;
-
-      li {
-        // display: inline-block;
-        list-style: none;
-      }
+    .nav-link {
+      color: white;
     }
   }
 
-  .row > div {
-    border: 1px solid grey;
-    height: $frameHeight;
+  h6 {
+    text-transform: uppercase;
+  }
+
+  .butt11,
+  .butt12 {
+    button {
+      color: white;
+      border-color: white;
+    }
+  }
+
+  .butt11 {
+    display: flex;
+    position: absolute;
+    right: 2%;
+    top: $navOfset;
+  }
+
+  .icon {
+    display: none;
   }
 
   .row {
     .main {
-      .icon {
+      .name {
+        position: absolute;
+        font-size: 18px;
+        top: 40px;
+      }
+
+      .butt12 {
         display: none;
       }
+    }
+  }
 
-      .butFrame {
-        display: flex;
-        position: fixed;
-        right: 2%;
-        top: 5%;
+  .logo {
+    position: absolute;
 
-        .buttn {
-          background-color: transparent;
-          border: 1px solid black;
-          // align-items: center;
-          // justify-content: center;
-          text-align: center;
-          height: $navHeight;
-          width: $buttnWidth;
-          padding: 0 6px;
-        }
-      }
+    .circle {
+      width: 24px;
+      height: 24px;
+      left: 6px;
+    }
+
+    .square {
+      width: 24px;
+      height: 24px;
+      left: 16px;
+    }
+
+    .triangle {
+      width: 16px;
+      height: 24px;
+    }
+  }
+
+  .triangle {
+    position: absolute;
+    // background: lightgrey;
+    width: 96px;
+    height: 140px;
+    border-bottom: 1px solid white;
+    left: 0;
+    right: 0;
+    margin: -38px auto;
+  }
+
+  .triangle:after,
+  .triangle:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+  }
+
+  .triangle:before {
+    border-left: 1px solid white;
+    left: 0;
+    transform: rotate(20deg);
+    transform-origin: bottom left;
+  }
+
+  .triangle:after {
+    border-right: 1px solid white;
+    right: 0;
+    transform: rotate(-20deg);
+    transform-origin: bottom right;
+  }
+
+  .circle,
+  .square {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border: 1px solid white;
+    left: 0;
+    right: 0;
+    margin: -38px auto;
+  }
+
+  .circle {
+    border-radius: 50%;
+  }
+
+  .row {
+    .bx1 {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../pictures/n.jpg);
+    }
+
+    .bx2 {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../pictures/2.jpg);
+    }
+
+    .bx3 {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../pictures/3.jpg);
+    }
+  }
+
+  .row {
+    .bx1,
+    .bx2,
+    .bx3,
+    .main {
+      padding: 160px 20px 10px;
+      height: $frameHeight;
+      background-size: cover;
+      background-position: initial;
+      z-index: -1;
     }
   }
 
   footer {
-    border: 1px solid grey;
+    // border: 1px solid grey;
     height: $frameHeight;
   }
 }
 @media screen and (max-width: 767px) {
+  body {
+    .nav {
+      display: none;
+    }
 
-  nav {
-    ul {
-      // display: none;
-      li {
-        display: none;
+    .butt11 {
+      display: none;
+    }
+
+    .icon {
+      display: flex;
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      background: white;
+      height: 49px;
+      width: 49px;
+      border-radius: 50%;
+      justify-content: center;
+
+      i {
+        color: black;
+        display: flex;
+        align-items: center;
+        font-size: 28px;
       }
     }
-  }
 
-  .row {
-    .main {
-      .icon {
-        display: flex;
-        position: absolute;
-        top: 5%;
-        right: 5%;
-      }
-
-      .butFrame {
-        display: flex;
-        position: relative;
-        top: $buttnPostion;
-        width: 100%;
-        right: 0;
-
-        .buttn {
-          background-color: transparent;
-          border: 1px solid black;
-          // align-items: center;
-          // justify-content: center;
-          text-align: center;
-          height: $navHeight;
-          width: $buttnWidth;
-          padding: 0 6px;
-          margin: auto;
+    .row {
+      .main {
+        .butt12 {
+          display: unset;
+          position: absolute;
+          bottom: 25px;
+          right: 0;
+          left: 0;
         }
       }
     }
   }
 }
-
-
-// body{
-//   background-color: yellow;
-// }

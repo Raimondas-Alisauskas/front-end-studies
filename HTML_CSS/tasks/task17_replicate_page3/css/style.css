@@ -1,75 +1,153 @@
 body {
   font-family: "Lato", sans-serif;
+  color: white;
   background-color: #947bb0;
 }
 body nav {
-  width: 50%;
-  height: 27px;
   position: absolute;
-  left: 25%;
-  top: 5%;
+  right: 0;
+  left: 0;
+  top: 20px;
 }
-body nav ul {
-  margin: 0;
+body nav .nav-link {
+  color: white;
+}
+body h6 {
+  text-transform: uppercase;
+}
+body .butt11 button,
+body .butt12 button {
+  color: white;
+  border-color: white;
+}
+body .butt11 {
   display: flex;
-  justify-content: space-evenly;
-  padding: 5px;
+  position: absolute;
+  right: 2%;
+  top: 20px;
 }
-body nav ul li {
-  list-style: none;
-}
-body .row > div {
-  border: 1px solid grey;
-  height: 300px;
-}
-body .row .main .icon {
+body .icon {
   display: none;
 }
-body .row .main .butFrame {
-  display: flex;
-  position: fixed;
-  right: 2%;
-  top: 5%;
+body .row .main .name {
+  position: absolute;
+  font-size: 18px;
+  top: 40px;
 }
-body .row .main .butFrame .buttn {
-  background-color: transparent;
-  border: 1px solid black;
-  text-align: center;
-  height: 27px;
-  width: 117px;
-  padding: 0 6px;
+body .row .main .butt12 {
+  display: none;
+}
+body .logo {
+  position: absolute;
+}
+body .logo .circle {
+  width: 24px;
+  height: 24px;
+  left: 6px;
+}
+body .logo .square {
+  width: 24px;
+  height: 24px;
+  left: 16px;
+}
+body .logo .triangle {
+  width: 16px;
+  height: 24px;
+}
+body .triangle {
+  position: absolute;
+  width: 96px;
+  height: 140px;
+  border-bottom: 1px solid white;
+  left: 0;
+  right: 0;
+  margin: -38px auto;
+}
+body .triangle:after,
+body .triangle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+body .triangle:before {
+  border-left: 1px solid white;
+  left: 0;
+  transform: rotate(20deg);
+  transform-origin: bottom left;
+}
+body .triangle:after {
+  border-right: 1px solid white;
+  right: 0;
+  transform: rotate(-20deg);
+  transform-origin: bottom right;
+}
+body .circle,
+body .square {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border: 1px solid white;
+  left: 0;
+  right: 0;
+  margin: -38px auto;
+}
+body .circle {
+  border-radius: 50%;
+}
+body .row .bx1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../pictures/n.jpg);
+}
+body .row .bx2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../pictures/2.jpg);
+}
+body .row .bx3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../pictures/3.jpg);
+}
+body .row .bx1,
+body .row .bx2,
+body .row .bx3,
+body .row .main {
+  padding: 160px 20px 10px;
+  height: 500px;
+  background-size: cover;
+  background-position: initial;
+  z-index: -1;
 }
 body footer {
-  border: 1px solid grey;
-  height: 300px;
+  height: 500px;
 }
 
 @media screen and (max-width: 767px) {
-  nav ul li {
+  body .nav {
     display: none;
   }
-
-  .row .main .icon {
+  body .butt11 {
+    display: none;
+  }
+  body .icon {
     display: flex;
     position: absolute;
     top: 5%;
     right: 5%;
+    background: white;
+    height: 49px;
+    width: 49px;
+    border-radius: 50%;
+    justify-content: center;
   }
-  .row .main .butFrame {
+  body .icon i {
+    color: black;
     display: flex;
-    position: relative;
-    top: 100px;
-    width: 100%;
-    right: 0;
+    align-items: center;
+    font-size: 28px;
   }
-  .row .main .butFrame .buttn {
-    background-color: transparent;
-    border: 1px solid black;
-    text-align: center;
-    height: 27px;
-    width: 117px;
-    padding: 0 6px;
-    margin: auto;
+  body .row .main .butt12 {
+    display: unset;
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    left: 0;
   }
 }
 
