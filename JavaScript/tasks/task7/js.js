@@ -54,12 +54,12 @@ function display(toDisplay) {
   if (toDisplay === "") {
     toDisplay = "0";
   }
-  if (typeof(toDisplay) =='number'){
+  if (typeof(toDisplay) ==
+  'number'){
       output.innerText = toDisplay;
   } else{
     output.innerText = toDisplay.replace("*", "x");
   }
-
 
 }
 //start
