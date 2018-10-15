@@ -1,0 +1,14 @@
+#dealer, #player1{
+
+}
+body div{
+  border: 1px solid yellow;
+}
+#table\20 container > div.row{
+  height: 100px;
+  background-color: #ddd;
+
+}
+#cards{
+  height: 100px;
+}
