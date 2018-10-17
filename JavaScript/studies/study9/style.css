@@ -1,14 +1,50 @@
-#dealer, #player1{
+#dealer,
+#player1 {}
 
+body div {
+    border: 1px solid yellow;
 }
-body div{
-  border: 1px solid yellow;
-}
-#table\20 container > div.row{
-  height: 100px;
-  background-color: #ddd;
 
+#table\20 container>div.row {
+    /* height: 100px; */
+    background-color: #ddd;
 }
-#cards{
-  height: 100px;
+
+#dealer,
+#player1 {
+    height: 50%;
+}
+
+.cards,
+.scores {
+    padding: auto;
+    /* display: fex;
+    align-items: center; */
+}
+
+.customContainer {
+    /* max-width: 720px; */
+    height: 300px;
+    background-color: antiquewhite
+}
+
+#gameScreen {
+    height: 80%;
+    background-color: rgb(215, 218, 235)
+}
+
+#upperRow {
+    height: 80%;
+}
+
+#lowerRow {
+    height: 20%;
+}
+
+#resultsW {
+    background-color: rgb(215, 218, 235)
+}
+
+p {
+    margin: 0;
 }
