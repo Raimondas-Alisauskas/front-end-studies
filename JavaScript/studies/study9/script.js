@@ -61,8 +61,6 @@ const dealer = {
     }
 }
 
-
-
 const Player = function(money, cards) {
     this.money = money;
     this.cards = cards;

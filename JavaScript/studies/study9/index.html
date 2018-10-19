@@ -17,14 +17,14 @@
     <div id="table" class="container customContainer ">
         <div id="upperRow" class="row justify-content-center align-items-center">
             <div id="gameScreen" class="col-sm-9 col-md-6 col-lg-5 col-xl-4">
-                <div id="dealer" class="row text-center align-items-center">
+                <div id="dealerScreenRow" class="row text-center align-items-center">
                     <div id="dealerCardsW" class="cards col-sm-7 ">Cards</div>
-                    <div id="dealerScoreW" class="scores col-sm-5 align-middle">
+                    <div id="dealerScoreW" class="scores col-sm-5">
                         <p>Dealer's score:</p>
                         <p id="dealerScore">0</p>
                     </div>
                 </div>
-                <div id="player1" class="row text-center align-items-center">
+                <div id="player1ScreenRow" class="row text-center align-items-center">
                     <div id="player1CardsW" class="cards col-sm-7">Cards</div>
                     <div id="player1ScoreW" class="scores col-sm-5">
                         <p>Player's score:</p>
@@ -38,14 +38,21 @@
                 <button id="passBtn" type="button" class="btn btn-primary btn-sm">Pass</button>
             </div>
         </div>
+
         <div id="lowerRow" class="row justify-content-center align-items-center">
-            <div id="resultsW" class="col-sm-9 col-md-6 col-lg-5 col-xl-4">
-                <p>Results: <span id="results"></span></p>
+            <div id="resultsScreen" class="col-sm-9 col-md-6 col-lg-5 col-xl-4">
+                <div id="resultsScreenRow" class="row align-items-center">
+                    <div id="resultsW" class="scores col">
+                        <p>Results: <span id="results"></span></p>
+                    </div>
+                </div>
+
             </div>
             <div id="newGameW" class="col-sm-3 col-md-2 col-lg-2 col-xl-2 text-center ">
                 <button id="newGameBtn" type="button" class="btn btn-primary btn-sm">New Game</button>
             </div>
         </div>
+
     </div>
 
 </body>

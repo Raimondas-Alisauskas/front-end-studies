@@ -1,6 +1,3 @@
-#dealer,
-#player1 {}
-
 body div {
     border: 1px solid yellow;
 }
@@ -10,41 +7,52 @@ body div {
     background-color: #ddd;
 }
 
-#dealer,
-#player1 {
-    height: 50%;
-}
-
-.cards,
-.scores {
-    padding: auto;
-    /* display: fex;
-    align-items: center; */
+p {
+    margin: 0;
 }
 
 .customContainer {
-    /* max-width: 720px; */
     height: 300px;
-    background-color: antiquewhite
+    /* background-color: antiquewhite; */
+    /* &:before { */
+    background-image: linear-gradient((0, black, black 0.5%)),
+    url(&:before {https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnYeMRIkXroZUjMtCEvaZbk_SAJs3pNFHh6OIJ0ITULUzc603duA);
+    /* } */
 }
 
-#gameScreen {
+#gameScreen,
+#resultsScreen {
     height: 80%;
     background-color: rgb(215, 218, 235)
+}
+
+#dealerScreenRow,
+#player1ScreenRow,
+#resultsScreen {
+    height: 50%;
+}
+
+#resultsScreenRow {
+    height: 100%;
 }
 
 #upperRow {
-    height: 80%;
+    background-image: linear-gradient(0, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdIt9ifUpm2CK6oCqWCTs-2daP_S3Epzm0qrZfEH6Vi5lrifDF);
+    background-size: cover;
+    height: 70%;
+    background-image: image()
+    /* background-color: rgb(215, 218, 235) */
 }
 
 #lowerRow {
-    height: 20%;
+    height: 30%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFG1SqkRJsc5mUkfwvuOZVwJZMWegp48MtABN0AGWJhhMgYNc6);
+    background-size: cover;
 }
 
+#player1ScoreW,
+#dealerScoreW,
 #resultsW {
-    background-color: rgb(215, 218, 235)
-}
-
-p {
-    margin: 0;
+    /* height: 50%; */
+    background-color: rgb(240, 241, 245)
 }
