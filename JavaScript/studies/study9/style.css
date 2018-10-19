@@ -1,58 +1,77 @@
-body div {
+/* body div {
     border: 1px solid yellow;
-}
+} */
 
-#table\20 container>div.row {
-    /* height: 100px; */
+
+/* #table\20 container>div.row {
+        height: 100px;
+    
     background-color: #ddd;
 }
+*/
 
 p {
     margin: 0;
 }
 
-.customContainer {
-    height: 300px;
-    /* background-color: antiquewhite; */
-    /* &:before { */
-    background-image: linear-gradient((0, black, black 0.5%)),
-    url(&:before {https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnYeMRIkXroZUjMtCEvaZbk_SAJs3pNFHh6OIJ0ITULUzc603duA);
-    /* } */
+#main {
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFG1SqkRJsc5mUkfwvuOZVwJZMWegp48MtABN0AGWJhhMgYNc6);
+}
+
+.customContainer {}
+
+.results {
+    margin: auto 0px;
 }
 
 #gameScreen,
+#resultsScreen,
+#actionScreen,
+#newGameScreen,
 #resultsScreen {
-    height: 80%;
-    background-color: rgb(215, 218, 235)
+    /* height: 80%; */
+    /* background-color: rgba(215, 218, 235, 0.95); */
 }
 
 #dealerScreenRow,
-#player1ScreenRow,
-#resultsScreen {
-    height: 50%;
+#player1ScreenRow {
+    height: 24vh;
 }
 
 #resultsScreenRow {
     height: 100%;
 }
 
-#upperRow {
-    background-image: linear-gradient(0, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdIt9ifUpm2CK6oCqWCTs-2daP_S3Epzm0qrZfEH6Vi5lrifDF);
-    background-size: cover;
-    height: 70%;
-    background-image: image()
-    /* background-color: rgb(215, 218, 235) */
-}
-
-#lowerRow {
-    height: 30%;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFG1SqkRJsc5mUkfwvuOZVwJZMWegp48MtABN0AGWJhhMgYNc6);
-    background-size: cover;
-}
-
 #player1ScoreW,
 #dealerScoreW,
 #resultsW {
-    /* height: 50%; */
-    background-color: rgb(240, 241, 245)
+    background-color: rgba(255, 255, 255, 0.7)
+}
+
+.vertical-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    margin: 8px auto;
+}
+
+#dealerCardsW,
+#player1CardsW {
+    height: 80%;
+}
+
+.cardImage {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+
+.resultsJumbo,
+.gameJumbo {
+    opacity: 0.95;
 }
