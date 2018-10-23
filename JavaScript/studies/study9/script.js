@@ -4,6 +4,10 @@ let passBtn = document.getElementById(`passBtn`);
 let newGameBtn = document.getElementById(`newGameBtn`)
 let numberOfPlayers = 1;
 let gameOver;
+let playerOffset;
+let dealerOffset;
+let dealerStack;
+let playerStack;
 
 
 function createDeck() {
@@ -13,28 +17,28 @@ function createDeck() {
             let number;
             let value;
             if (i === 0)
-                suit = 'hearts'
+                suit = 'H'
             if (i === 1)
-                suit = 'clubs'
+                suit = 'C'
             if (i === 2)
-                suit = 'diamonds'
+                suit = 'D'
             if (i === 3)
-                suit = 'spades'
+                suit = 'S'
 
             if (j === 11) {
-                number = 'jack';
+                number = 'J';
                 value = 10
             }
             if (j === 12) {
-                number = 'queen';
+                number = 'Q';
                 value = 10
             }
             if (j === 13) {
-                number = 'king';
+                number = 'K';
                 value = 10
             }
             if (j === 14) {
-                number = 'ace';
+                number = 'A';
                 value = 11
             }
 
@@ -54,6 +58,10 @@ const dealer = {
     score: 0,
     takeCard: function() {
         let randomCard = Math.floor(Math.random() * deck.length)
+
+        let card = "" + deck[randomCard].name + deck[randomCard].suit;
+        putDealerCard(card);
+
         dealer.score += deck[randomCard].value
         dealer.cards.push(deck.splice(randomCard, 1)[0])
         document.getElementById('dealerScore').innerHTML = `${dealer.score}`;
@@ -67,6 +75,10 @@ const Player = function(money, cards) {
     this.score = 0;
     this.takeCard = () => {
         let randomCard = Math.floor(Math.random() * deck.length)
+
+        let card = "" + deck[randomCard].name + deck[randomCard].suit;
+        putPlayerCard(card);
+
         player.score += deck[randomCard].value
         player.cards.push(deck.splice(randomCard, 1)[0])
             // console.log("player score - " + player.score)
@@ -90,8 +102,18 @@ function start() {
     player.score = 0;
     dealer.cards = [];
     player.cards = [];
+    playerOffset = 15;
+    dealerOffset = 15;
+    dealerStack = "";
+    playerStack = "";
+    document.getElementById('dealerCardsW').innerHTML = dealerStack;
+    document.getElementById('player1CardsW').innerHTML = playerStack;
+
+
     // document.getElementById('player1Scores').innerHTML = "Player's score - 0";
     // document.getElementById('dealerScores').innerHTML = "Dealer's score - 0";
+
+
 
     displayResults(" ");
 
@@ -102,6 +124,8 @@ function start() {
 
             console.log(player.score);
 
+            let card = "" + deck[randomCard].name + deck[randomCard].suit;
+            putPlayerCard(card);
             player.cards.push(deck.splice(randomCard, 1)[0]);
             document.getElementById('player1Score').innerHTML = player.score.toString();
         }
@@ -110,7 +134,14 @@ function start() {
             dealer.score += deck[dealerRandomCard].value;
 
             console.log(dealer.score);
+            // console.log(dealerRandomCard);
+            console.log("suit: " +
+                deck[dealerRandomCard].suit);
+            console.log("name: " + deck[dealerRandomCard].name);
 
+            let card = "" + deck[dealerRandomCard].name + deck[dealerRandomCard].suit;
+            console.log("card: " + card);
+            putDealerCard(card);
             dealer.cards.push(deck.splice(dealerRandomCard, 1)[0]);
             document.getElementById('dealerScore').innerHTML = dealer.score.toString();
             console.log(dealer);
@@ -142,6 +173,22 @@ function displayResults(text) {
     console.log(text);
 }
 
+function putPlayerCard(card) {
+    playerStack = `<img class="cardImage" src="./cards/PNG/${card}.png" style="left: ${playerOffset}px">`
+    document.getElementById('player1CardsW').innerHTML += playerStack;
+    playerOffset += 15;
+    console.log(playerStack);
+
+}
+
+
+function putDealerCard(card) {
+    dealerStack = `<img class="cardImage" src="./cards/PNG/${card}.png" style="left: ${dealerOffset}px">`;
+    document.getElementById('dealerCardsW').innerHTML += dealerStack;
+    dealerOffset += 15;
+    console.log(dealerStack);
+
+}
 
 passBtn.addEventListener('click', function() {
     player.pass();
